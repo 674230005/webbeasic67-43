@@ -6,6 +6,7 @@
     <title>heading workshop</title>
     <style>
         body{
+           
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 20px;
             padding: 10px;
@@ -38,11 +39,23 @@
 
 
    }
+   .cat{
+            background-color: rgb(184, 171, 171); 
+            border-left: #1c5ca4 5px solid; 
+            font-size: 16px;
+            padding: 10px 20px;
+           }
+    .dog{
+       text-align: left;
+            color: rgb(0, 0, 0);
+           
+        
+    }
    </style>
 </head>
 <body>
    <h1>Workshop: HTML Heading</h1>
-   <p class="subtitle">ฝึกใช้แท็ก--และการปรับขนาดหัวข้อด้วย CSS</p>
+   <p class="subtitle">ฝึกใช้แท็ก&lt;h1&gt;-&lt;h6&gt;และการปรับขนาดหัวข้อด้วย CSS</p>
    <div class="container">
    <!---section 1 --->
     <section class="card">
@@ -56,10 +69,10 @@
     <li>H5 – ใช้น้อย แต่เน้นล าดับข้อมูล</li>
     <li>H6 – เล็กสุดใช้กับหัวข้อระดับลึก</li>
 </ul>
-<p class="note">📌กล่องคeแนะนำเช่น H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
+<p class="note">📌กล่องคำแนะนำเช่น H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
 </section>
 </div>
-    
+
 
 
 
@@ -69,33 +82,50 @@
 </html>
    <!---section 2 --->
 <section class="card">
-<h2>1. ความหมายของ Headings (H1–H6)</h2>
+<h2>2. ตัวอย่างการใช ้H1–H6(H1–H6)</h2>
 <p>HTML มีหัวข้อทั้งหมด 6 ระดับ</p>
-<ul>
-    <li>H1 – หัวข้อใหญ่สุด ใช้ส าหรับชื่อหน้าเว็บหรือหัวข้อหลัก</li>
-    <li>H2 – หัวข้อรอง แบ่ง Section ของเนื้อหา</li>
-    <li>H3 – หัวข้อย่อยภายใน H2</li>
-    <li>H4 – ย่อยลงไปอีกระดับ</li>
-    <li>H5 – ใช้น้อย แต่เน้นล าดับข้อมูล</li>
-    <li>H6 – เล็กสุดใช้กับหัวข้อระดับลึก</li>
-</ul>
-<p class="note">📌กล่องคeแนะนำเช่น H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
+<pre>
+<p class="cat">
+ &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+ &lt;h2&gt;HTML Basics&lt;/h2&gt;
+ &lt;h3&gt;What is HTML?&lt;/h3&gt;
+ &lt;h4&gt;HTML Syntax&lt;/h4&gt;
+ &lt;h5&gt;Example Code&lt;/h5&gt;
+ &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;
+</p></pre>
+<p><h5>เมื่อแสดงภาพจะได้ขนาดลดหลั่นแบบนี้:</h5></p>
+<p>
+    <h1 class="dog">H1: Welcome to My Website</h1>
+    <h2>H2: HTML Basics</h2>
+    <h3>hH3: What is HTML?</h3>
+    <h4>H4: HTML Syntax</h4>
+    <h5>H5: Example Code</h5>
+    <h6>H6: Note about heading size</h6>
+</p>
+
+
 </section>
 </div>
 
+   <!---section 3 --->
 <section class="card">
-<h2>1. ความหมายของ Headings (H1–H6)</h2>
-<p>HTML มีหัวข้อทั้งหมด 6 ระดับ</p>
-<ul>
-    <li>H1 – หัวข้อใหญ่สุด ใช้ส าหรับชื่อหน้าเว็บหรือหัวข้อหลัก</li>
-    <li>H2 – หัวข้อรอง แบ่ง Section ของเนื้อหา</li>
-    <li>H3 – หัวข้อย่อยภายใน H2</li>
-    <li>H4 – ย่อยลงไปอีกระดับ</li>
-    <li>H5 – ใช้น้อย แต่เน้นล าดับข้อมูล</li>
-    <li>H6 – เล็กสุดใช้กับหัวข้อระดับลึก</li>
-</ul>
-<p class="note">📌กล่องคeแนะนำเช่น H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
-</section>
+<h2>3. ถ้าอยากให้หัวข้อ “ใหญ่กว่า” หรือ “เล็กกว่า”ขนาดเดิม?</h2>
+<pre>
+<p class="cat">
+h3 {
+font-size: 40px; /* ทำให้ H3 ใหญ่เท่า H1 ได้ */
+color: #c4005a;
+}
+h5 {
+font-size: 12px; /* ทำให้ H5 เล็กลงอีก */
+}  
+</p>
+<p><h3>หรือสามารถกำหนดเฉพาะบางหัวข้อได ้:</h3></p>
+<pre><p class="cat">&lt;h3 style="font-size: 50px; color: blue;"&gt;Big Custom Heading&lt;/h3&gt;</p>
+
+</pre>
+</pre>
+<p class="note">💡❗จำไว้ว่า ลำดับหัวข้อควรเป็น H1 → H2 → H3 ตามโครงสร้างเนื้อหา ไม่ควรใช้ H5 เพื่อให้ “ตัวเล็กลง” หรือใช้ H1 เพื่อให้ “ตัวใหญ่ขึ้น” → ต้องแต่งด้วย CSS เท่านั้น</p>
 <a href="index.html">&larr; Back to HTML Tutorial</a>
 </div>
     
