@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting</title>
+    <style>
+        body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: antiquewhite;
+         line-height: 1.75;
+    }
+    
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f0f1e7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h1{
+            color: #b21905;
+        }
+        
+        h2{
+            color: #000000;
+        }
+        
+      
+        
+
+        ul{
+            color: #000000;
+        }
+        
+        .card {
+            background-color: aliceblue;
+            border-top: 5px solid rgb(236, 4, 4);
+            border-radius: 8px;
+            padding: 15px 35px;
+            margin-bottom:  20px;
+            box-shadow: 0 4px 12px rgb(181, 171, 167);
+        }
+       .card.module-2 {border-top: 5px solid #ed6d18;}
+        .card.module-3 {border-top: 5px solid #b9cc11;}
+        
+        .box{
+             background-color: #bac7dc;
+            border: 2px solid hsl(0, 100%, 50%);
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin-top: 15px;
+        }
+        .text-color-pink{
+            color: #c30a66;
+        }
+        
+        .note{
+            font-style: italic;
+            color: #000000;
+            border-left: 4px solid #fc0707;
+            padding-left: 10px;
+            margin-top: 15px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+
+        }
+        .note::before {
+            content: "❗";
+        }
+        .H1{
+    
+        text-align: left;
+            color: rgb(0, 0, 0);
+        }
+        .back-link {
+         /* display: lnline-block; */
+        display: block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        background-color: rgb(131, 133, 132);
+        text-align: center;
+        border-radius: 10px;
+        padding: 8px 0px;
+    }
+    .back-link:hover {
+        /* text -decoration: underline */
+        text-decoration: underline;
+        color: rgb(2, 23, 255);
+        background-color: rgb(255, 255, 255);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+   <!--card 1 --> 
+    <header>
+        <h1>Workshop: HTML Text Formatting</h1>
+        <p>ฟึกใช้แท็กรูปแบบขอ้ความ (Formatting Tags) เพื่อสร้างเนื้อหาที่อ่านง่ายและเป็นระเบียบ</p>
+    </header>
+    <main>
+        <div class="card">
+            <p>HTML มีแท็กสำหรับจัดรูปแบบข้อความ ทำให้เนื้อหาดูเด่น อ่านง่าย และสื่อความหมายได้ดีขึ้น </p>
+            <ul>
+                <li>&lt;b&gt;<b class="text-color-pink">-ตัวหนา (เน้นเฉย ๆ)</b></li>
+                <li>&lt;strong&gt;-<strong class="text-color-pink">ตัวหนาแบบ “สำคัญ” เชิงความหมาย</strong> (semantic importance)</li>
+                <li>&lt;i&gt;<i class="text-color-pink">-ตัวเอียง (ใช้กับศัพท์เฉพาะหรือคำเน้น)</i></li>
+                <li>&lt;em&gt;<em class="text-color-pink">-ตัวเอียงแบบเน้นน้ำเสียง</em></li>
+                <li>&lt;u&gt;<u class="text-color-pink">-ขีดเส้นใต้ ้</u></li>
+                <li>&lt;mark&gt;<mark class="text-color-pink">-ไฮไลต์ข้อความ</mark></li>
+                <li>&lt;code&gt;<code class="text-color-pink">-แสดงข้อความเป็นรูปแบบโค้ด</code></li>
+                <li>&lt;small&gt;<small class="text-color-pink">-ข้อความขนาดเล็ก</small></li>
+                <li>&lt;del&gt;<del class="text-color-pink">-ข้อความขีดฆ่า</del></li>
+                <li>&lt;s&gt;<s class="text-color-pink">-ข้อความขีดฆ่า</s></li>
+                <li>&lt;sub&gt;-ตัวห้อยเช่น H<sub class="text-color-pink"><sud>2</sub>O </li>
+                <li>&lt;sup&gt;-ตัวยกเช่นX<sup class="text-color-pink">2</sup></li>
+            </ul>
+            
+            <div class="box">
+                <p>แท็กที่ไม่รองรับใน HTML5</p>
+                <ul>
+                    <li>&lt;strike&gt;-not support in HTML5 </li>
+                    <li>&lt;big&gt;not support</li>
+                    <li>&lt;mark&gt;not support</li>
+                </div>
+                <div class="note">นักศึกษาต้องใช้ Formatting อย่างน้อย 5 ตัวในงานนี้</div>
+             
+        </div>
+
+        
+    
+    
+    
+    <div class="class"></div>
+    <!--card 2 -->
+    <div class="card module-2">
+        <h2>2. ภารกิจของสำหรับนักศึกษาต้องทำ</h2>
+        <p>ให้ค้นหาเนื้อหาเกี่ยวกับ “เทคโนโลยีคอมพิวเตอร์สมัยใหม่” โดยต้องมี:</p>
+        <ul>
+            <li>หัวข้อ &lt;h1&gt; 1 อัน</li>
+            <li>ย่อหน้า &lt;p&gt; อย่างน้อย 3 ย่อหน้า</li>
+            <li>ใช้แท็ก formatting อย่างน้อย 5 ประเภท</li>
+            <li>ข้อความไหนมีการจัด formatting ให้ใส่ข้อความเป็นสีแดงชมพู</li>
+        </ul>
+        
+    </div>
+    <!--card 3 -->
+    <div  class="card module-3">
+       <h1 class="H1">เทคโนโลยีคอมพิวเตอร์สมัยใหม่</h1>
+       <p>
+        <b  class="text-color-pink">เทคโนโลยีคอมพิวเตอร์สมัยใหม่</b>
+        คือเทคโนโลยีที่เกี่ยวข้องกับการพัฒนาและใช้งานคอมพิวเตอร์ในปัจจุบัน โดยมีเป้าหมายเพื่อเพิ่มความสะดวก รวดเร็ว และประสิทธิภาพในการทำงานและการใช้ชีวิตประจำวัน
+    </p>
+    <p>
+      <strong class="text-color-pink">ลักษณะสำคัญของเทคโนโลยีคอมพิวเตอร์สมัยใหม่</strong>
+      ประกอบด้วยระบบประมวลผลที่มีความเร็วสูง การเชื่อมต่อผ่านอินเทอร์เน็ต และการจัดการข้อมูลจำนวนมาก <u class="text-color-pink">โดยมี ปัญญาประดิษฐ์ (AI) และ Cloud Computing </u>เข้ามาช่วยสนับสนุนการทำงานในหลายด้าน เช่น การแพทย์ การศึกษา และธุรกิจ  
+    </p>
+    <p>
+        <strong class="text-color-pink">ประโยชน์และผลกระทบ</strong>
+        เทคโนโลยีคอมพิวเตอร์สมัยใหม่ช่วยเพิ่มประสิทธิภาพในการทำงานและการสื่อสารอย่างเห็นได้ชัด<mark class="text-color-pink">ทำให้โลกมีความเชื่อมโยงกันมากขึ้น</mark> แต่ในขณะเดียวกันก็ต้องใช้อย่างระมัดระวัง <u class="text-color-pink"><strong class="text-color-pink">เพื่อหลีกเลี่ยงผลกระทบด้านลบ</strong></u> เช่นปัญหาความเป็นส่วนตัวและการพึ่งพาเทคโนโลยีมากเกินไป
+    </p>
+
+    </div>
+    </main> 
+       <div class="footer"> </div> 
+       <a href="index.html"class="back-link">&larr; Back to HTML Tutorial</a>
+</footer>
+        
+       
+        </div>
+        
+
+</body>
+</html>
