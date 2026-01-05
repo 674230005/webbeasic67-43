@@ -7,19 +7,16 @@
     <style>
         body{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         margin: 0;
-         padding: 0;
-         background-color: rgb(255, 255, 255);
-         line-height: 1.75;
+        margin: 30px 90px 0 90px;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+        line-height: 1.75;
     }
-    
+    /* text -decoration: underline */
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #f8f8f8;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+            max-width: 2000px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
         header {
@@ -46,7 +43,7 @@
             margin-bottom:  20px;
             box-shadow: 0 4px 12px rgb(181, 171, 167);
         }
-         .card3 {
+        .card3 {
             background-color: aliceblue;
             border-radius: 8px;
             padding: 15px 35px;
@@ -60,7 +57,7 @@
         .card.module-5 {border-top: 5px solid #1bb6a7;}
         .card.module-6 {border-top: 5px solid #948bc1;}
         .box{
-             background-color: #bac7dc;
+            background-color: #bac7dc;
             border: 2px solid hsl(0, 100%, 50%);
             border-radius: 8px;
             padding: 10px 20px;
@@ -73,7 +70,7 @@
         .note{
             font-style: italic;
             color: #000000;
-            border-left: 4px solid #58043a;
+            border-left: 4px solid #ad3661;
             padding-left: 10px;
             margin-top: 15px;
         }
@@ -81,7 +78,6 @@
         footer {
             text-align: center;
             margin-top: 20px;
-
         }
         .note::before {
             content: "❗";
@@ -114,7 +110,6 @@
         text-decoration: none;
         color: #2b0ae9;
         font-weight: bold;
-           
     }
     a:hover{
             
@@ -126,15 +121,14 @@
             border-left: #ba0a73 5px solid; 
             font-size: 16px;
             padding: 5px 20px;
-           }
-     .c {
+    }
+    .c {
         color: #042ba1;
-   
-     } 
-     .c1{
+    } 
+    .c1{
         color: #8b8d8f;
-     }
-     .back-linkss{
+    }
+    .back-linkss{
         color: #0019fd;
         text-decoration: none;
         background-color: rgb(214, 147, 1) ;
@@ -143,14 +137,14 @@
         padding: 10px 24px;
         border-radius: 15px;
         box-shadow: 0 4px 12px rgb(248, 37, 0);
-      }
-      .back-linkss:hover{
+    }
+    .back-linkss:hover{
         color: #ff0015;
         text-decoration: none;
         background-color: rgb(22, 245, 226);
         /* text-decoration : unferline */
-      } 
-      .Bs{
+    } 
+    .Bs{
         color: #ffffff;
         text-decoration: none;
         background-color: rgb(37, 151, 22) ;
@@ -159,13 +153,13 @@
         padding: 10px 24px;
         border-radius: 15px;
         box-shadow: 0 4px 12px rgb(33, 112, 77);
-      }
-      .Bs:hover{
+    }
+    .Bs:hover{
         color: #000000;
         text-decoration: none;
         background-color: rgb(249, 255, 254);       
-      }
-     .Bs1{
+    }
+    .Bs1{
         color: #000000;
         text-decoration: none;
         background-color: rgb(117, 90, 206) ;
@@ -174,27 +168,26 @@
         padding: 10px 24px;
         border-radius: 15px;
         box-shadow: 0 4px 12px rgb(59, 7, 190);
-      }
-      .Bs1:hover{
+    }
+    .Bs1:hover{
         color: #000000;
         text-decoration: none;
         background-color: rgb(95, 0, 112);       
-      }
-      .Btt {
-    background-color: #dbd8d8;
-    border: 1px solid #ffffff;
-    color: #000;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-right: 6px; 
-  }
-
-  .Btt:hover {
-    background-color: #c8b9d6;
-  }
-  .Bs3{
+    }
+    .Btt {
+        background-color: #dbd8d8;
+        border: 1px solid #ffffff;
+        color: #000;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-right: 6px; 
+    }
+    .Btt:hover {
+        background-color: #c8b9d6;
+    }
+    .Bs3{
         color: #ffffff;
         text-decoration: none;
         background-color: rgb(0, 0, 0) ;
@@ -203,120 +196,164 @@
         padding: 10px 24px;
         border-radius: 15px;
         box-shadow: 0 4px 12px rgb(5, 28, 237);
-      }
-      .Bs3:hover{
+    }
+    .Bs3:hover{
         color: #000000;
         text-decoration: none;
         background-color: rgb(255, 255, 255); 
-      }
+    }
+    .code{
+        padding: 0 ;
+        border-radius: 0 ;
+        background-color: rgb(214, 214, 214); 
+    }
+    .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    }
+    .grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    }
     
+    .imge-link img {
+        width: 260;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+    .imge-link img:hover{
+        transform: scale(1.03);
+        box-shadow:0 4px 12px #58043a;
+    }
 
-
- 
-     
+    
     </style>
 </head>
 <body>
     <div class="container">
-   <!--card 1 --> 
-    <header>
-        <h1>Workshop: Various Links</h1>
-        <p>เรียนรูปลิงค์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
-    </header>
-    <main>
-        <div class="card">
-            <h2>External Link</h2>
-            <div class="card3">
-                <a href=""class="link">Visit Wikipedia</a>
-                <p style="margin-top: 0;"><code>target="_blank"</code> เปิดลิ้งในแท็บใหม่</p>
-            </div>           
-            <div class="card3">
-                <a href=""class="link">Visit Google</a>
-                <p style="margin-top: 0;"><code>target="_seft"</code> เปิดลิ้งในแท็บใหม่</p>
-            </div>           
+        <header>
+            <h1>Workshop: Various Links</h1>
+            <p>เรียนรูปลิงค์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
+        </header>
+        <div class="card-grid">
+        <!--card 1 -->
+            <div class="card">
+                <h2>1. External Link</h2>
+                <div class="card3">
+                    <a href="https://th.wikipedia.org" target="_blank" class="link">Visit Wikipedia</a>
+                    <p style="margin-top: 0;"><code class="code">target="_blank"</code> เปิดลิ้งในแท็บใหม่</p>
+                </div>
+                <div class="card3">
+                    <a href="https://www.google.com" target="_self" class="link">Visit Google</a>
+                    <p style="margin-top: 0;"><code class="code">target="_seft"</code> เปิดลิ้งในแท็บใหม่</p>
+                </div>
+            </div>
+        <!--card 2 -->
+            <div class="card module-2">
+                <h2>2. Internal Links & Anchor Link</h2>
+                <pre class="cat">       
+        &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+        &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
+        &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;
+                </pre>
+                <a href="#jump" class="c">Cilck to Jump</a>
+                <h3 id="jump" style="margin-top: 30px;">This is the jump target.</h3>
+            </div>
+        <!--card 3 -->
+            <div  class="card module-3">
+                <h2>3. Email Links</h2>
+                <pre class="cat">       
+            &lt;a href="mailto:student@example.com?subject=Hello"&gt;
+                Send an Email
+            &lt;/a&gt;
+                </pre>
+                <a href=mailto:674230005@webmail.npru.ac.th?subject=สวัสดีวันจันทร์" class="c">Send an Email</a>
+            </div>
+        
+        <!--card 4 -->
+            <div  class="card module-4">
+                <h2>4. Download Linsk</h2>
+                <pre class="cat">       
+            &lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;;
+                </pre>
+                <a href="fie/723ca52e-3450-406a-83c5-3a7d40bd0cf8.png"download class="Bs">Download Text File </a>
+                <p class="c1">ต้องมีไฟล์ในโฟสเดอร์จึงจะดาวโหลดได้จริง </p>
+            </div>
+            </div>
+            <!--card 5 -->
+            <div  class="card module-6">
+            <h2>5. Image Link</h2>
+            คลิ๊กที่รูปภาพเพื่อเปิดลิงค์
+            <pre class="cat">
+            &lt;a href="https://youtube.com"&gt;
+            &lt;img src="images/sample.jpg" width="250"&gt;
+            &lt;/a&gt;
+            </pre>
+            <a class="imge-link" href="https://www.youtube.com/" target="_blank">
+            <img src="youtube.png" alt="YouTube" width="250" height="250">
+            </a>
+            <div class="note">หากต้องการใช้รูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น images/photo.jpg</div>
+            </div>
+        
+        <!--card 6 -->
+        <div  class="card module-5">
+            <h2>6. Button Link</h2>
+            <p>ลิ้งที่ออกแบบให้คล้ายปุ่ม เหมาะกลับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
+            <pre class="cat">    
+        &lt;a href="https://www.example.com" class="btn-link"&gt;
+        Visit Website
+        &lt;/a&gt;
+            </pre>
+            <a href="" class="Bs1">Visit Website</a>
+            <pre class="cat">    
+        &lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+        - มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
+        - ผูกกับ DOM (document) โดยตรง
+        &lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website&lt;/button&gt;
+        - นิยมใช้มากกว่า
+        - เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
+        - ผูกกับ window โดยตรง
+            </pre>
+        <div class="grid-3-col">
+            
+            
+            <div>
+                <p>ปุ่ม <code class="code">dcocument.location</code></p>
+                <button class="Btt">HTML Tulorial</button>
+            </div>
+            
+            <div>
+                <p>ปุ่ม <code class="code">location.href</code></p>
+                <button class="Btt">Visit Website</button>
+            </div>
+            
+            <div>
+                <p>ตัวอย่าง <code class="code">https://cssnippets.shefali.dve</code></p>
+                <button class="Btt">SUBSCRIBE</button>
+                </div> 
+                
+                <div>  
+                <p>เพิ่มขอบทอง</p>
+                <button class="Btt">SUBSCRIBE</button>
+            </div>
+            
+            <div>
+                <p>เพิ่มแอนิเมชั้นเมื่อชี้ปุ่ม</p>
+                <button class="Btt">SUBSCRIBE</button>
+            </div>
+            
+            <div>
+                <p>ปุ่มสีดำ ขอบทอง แสงวิ้ง</p>
+                <button class="Btt">SUBSCRIBE</button>
+            </div>
         </div>
 
+
+    </div>
         
     
-    
-   
-    <div class="class"></div>
-    <!--card 2 -->
-    <div class="card module-2">
-        <h2>2. Internal Links & Anchor Link</h2>
-        <pre class="cat">       
-&lt;a href="about.html"&gt;About Us&lt;/a&gt;
-&lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
-&lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;  
-        </pre>
-        <a href="" class="c">Cilck to Jump</a>
-        <h3>This is the jump target.</h3>
-    </div>
-    
-    
-    
-    
-    <!--card 3 -->
-    <div  class="card module-3">
-        <h2>3. Wmail Links</h2>
-        <pre class="cat">       
-&lt;a href="mailto:student@example.com?subject=Hello"&gt;
-        Send an Email
-&lt;/a&gt;
-  
-        </pre>
-        <a href="" class="c">Send an Email</a>
-    </div>
-    
-    <!--card 4 -->
-    <div  class="card module-4">
-        <h2>4. Download Linsk</h2>
-        <pre class="cat">       
-&lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;;
-        </pre>
-         <a href="" class="Bs">Download Linsk</a>
-         <p class="c1">ต้องมีไฟล์ในโฟสเดอร์จึงจะดาวโหลดได้จริง </p>
-
-    </div>
-    
-    <!--card 5 -->
-    <div  class="card module-5">
-        <h2>5. Button Link</h2>
-        <p>ลิ้งที่ออกแบบให้คล้ายปุ่ม เหมาะกลับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
-        <pre class="cat">    
-&lt;a href="https://www.example.com" class="btn-link"&gt;
-Visit Website
-&lt;/a&gt;        
-        </pre>
-         <a href="" class="Bs1">Visit Website</a>
-          <pre class="cat">    
-&lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
-- มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
-- ผูกกับ DOM (document) โดยตรง
-&lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website&lt;/button&gt;
-- นิยมใช้มากกว่า
-- เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
-- ผูกกับ window โดยตรง        
-        </pre>
-        <button class="Btt">HTML Tutorial</button>
-       <button class="Btt">Visit Website</button>
-    </div>
-    
-    <!--card 6 -->
-    <div  class="card module-6">
-        <h2>5. Image Link</h2>
-      คลิ๊กที่รูปภาพเพื่อเปิดลิงค์
-      <pre class="cat">
-&lt;a href="https://youtube.com"&gt;
-&lt;img src="images/sample.jpg" width="250"&gt;
-&lt;/a&gt;
-      </pre>
-      <a href="https://www.youtube.com/" target="_blank">
-   <img src="youtube.png" alt="YouTube" width="250" height="250">
-   </a>
-                   <div class="note">หากต้องการใช้รูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น images/photo.jpg</div>
-
-    </div>
     <a href="index.html"class="Bs3">&larr; Back to HTML Tutorial</a>
         
         
