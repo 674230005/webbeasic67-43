@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop - HTML Images</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- For Group 1: Header  -->
+    <header class="">
+        <h1>Workshop: Various Links</h1>
+        <p>ฟึกใช้แท็ก <code class="code">&lt;img&gt;</code> หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
+        <div>
+            <ul class="list-menu">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="container" >
+        <!-- For Group 2: Card 1: Basics -->
+        <div class="card">
+            <h2>1)Image Basics</h2>
+            <p>รูปภาพใน HTML ใช้แท็ก <code>&lt;img&gt;</code> โดยต้องมี</p>
+            <pre>
+                &lt;img src="images/photo.jpg" alt="ตัวอย่าง"&gt;
+            </pre>
+            <div class="position">
+                <img src="fie/logo.jpg" alt="img.logo" class="img_small" >
+            </div>
+            <div class="position" style="text-align: center;"">
+                <img src="fie/logo.jpg" alt="img.logo" class="img_small">
+            </div>
+            <div class="position" style="text-align: right;">
+                <img src="fie/logo.jpg" alt="img.logo" class="img_small">
+            </div>
+            <p class="note">alt สำคัญมาก: ช่วย SEO + ใช้แทนภาพเมื่อโหลดไม่ได้ + ช่วยผู้ใช้ Screen Reader</p>
+        </div>
+
+        <!-- For Group 3: Card 2: Resize & aspect -->
+        <div class="card module-2 ">
+            <h2>2) Resize & Aspect Ratio<span><a href="">object-fit</a></span></h2>
+            <p>ถ้ากำหนดทั้งความกว้างและสูง ให้ใช้ เพื่อไม่ให้ภาพบิด <code>object-fit</code></p>
+            <pre>
+                <img src="fie/logo.jpg" alt="img.logo" class="img-fixed" >
+                /* ครอปภาพให้พอดีกรอบ */
+                .img-fixed {
+                width: 260px;
+                height: 160px;
+                object-fit: cover;
+                }
+            </pre>
+            <p class="note"><code>cover</code> = ครอปให้เต็มกรอบ, <code>contain</code> = เห็นภาพครบ (อาจมีขอบว่าง)</p>
+        </div>
+
+        <!-- For Group 4: Card 3: Object fit -->
+        <section class="card module-4">
+            <h2>3) Object fit <span class="badge">contain fill cover</span></h2>
+            <p>ตัวอย่างการใช้ <code>object-fit</code> แบบต่างๆ</p>
+            <pre>
+                .obj-fit-image{
+                width: 800px;
+                height: 200px;
+                border: 1px solid black;
+                }
+                .obj-fit-image.contain { object-fit: contain; }
+                .obj-fit-image.fill { object-fit: fill; }
+                .obj-fit-image.cover { object-fit: cover; }
+            </pre>
+            <h3>ภาพต้นฉบับ</h3>
+            <div>
+                <img src="fie/2.png.jpg" alt="Object Fit Example">
+            </div>
+            <h3>ใส่ <code>object-fit: contain</code> ➡️เห็นภาพครบ รักษาสัดส่วน (อาจมีขอบว่าง)</h3>
+            <img src="fie/2.png.jpg" alt="Object Fit Contain Example" class="obj-fit-image contain">
+            <h3>object-fit: fill ➡️ยืดภาพให้เต็มกล่อง ภาพอาจบิด (สัดส่วนเพี้ยน)</h3>
+            <img src="fie/2.png.jpg" alt="Object Fit Fill Example" class="obj-fit-image fill">
+            <h3>object-fit: cover ➡️ครอปภาพให้เต็มกล่อง รักษาสัดส่วน บางส่วนของภาพจะถูกตัดออก</h3>
+            <img src="fie/2.png.jpg" alt="Object Fit Cover Example" class="obj-fit-image cover">
+        </section>
+
+        <!-- For Group 5: Card 4: Image as Link -->
+        <div class="card module-5">
+            <h2>4.image-Link <span class="badge">&lt;a&gt;+&lt;img&gt;</span></h2>
+            <pre>
+                &lt;a href="https://www.youtube.com" target="_blank"&gt;&lt;img src="images/banner.jpg" alt="Banner"&gt;
+                &lt;/a&gt;
+            </pre>
+            <a class="imge-link" href="https://www.youtube.com/" target="_blank">
+            <img src="fie/YouTube.png" alt="YouTube" width="250" height="250">
+            <p class="note">ใช้ target="_blank" เมื่ออยากเปิดในแท็บใหม</p>
+        </a>
+        </div>
+
+
+        <!-- For Group 6: Card 5: Gallery -->
+        <div class="card module-6">
+            <h2>5) Image Gallery <span class="badge">grid</span></h2>
+            <p>แสดงรูปหลายรูปด้วย Grid ให้จัดเรียงสวยและเป็นระเบียบ</p>
+            <pre>.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+                .gallery img { height: 120px; object-fit: cover; }
+            </pre>
+            <div class="gallery">
+                <img src="1" alt="1">
+                <img src="1" alt="2">
+                <img src="3" alt="3">
+                <img src="4" alt="4">
+                <img src="5" alt="5">
+                <img src="6" alt="6">
+            </div>
+            <p class="note"> 💡ถ้ารูปขนาดไม่เท่ากัน ใช้ object-fit:cover; จะช่วยให้ดูสม่ำเสมอ</p>
+        </div>
+
+        <!-- For Group 7: Card 6: Responsive -->
+        <div class="card module-1">
+            <h2>6.Responsive images</h2>
+            <p>ทำให้ภาพไม่ล้นการ์ดและย่อขยายตามหน้าจอ</p>
+            <pre>
+                img {
+                max-width: 100%;
+                height: auto;
+                }
+            </pre>
+            <div class="img_f">
+                <img src="fie/723ca52e-3450-406a-83c5-3a7d40bd0cf8.png" alt="โลโก้เว็บไซต์">
+            </div>
+            <p class="note">💡
+                เทคนิดนี้เป็นพื้นฐานสำคัญของเว็บ responsive
+            </p>
+        </div>
+
+        <!-- For Group 8: Card 7: Figure & Caption + Task -->
+        <div class="card module-2">
+            <h2>7 Figure + Caption</h2> <span class="student">งานนักศึกษา</span>
+            <p>ใช้<code>&lt;figure></code>และ <code>&lt;fugcaption</code>เพื่ออธิบายภาพ(เหมาะกับบทความ/รายงาน)</p>
+            <pre>
+                &lt;figure>
+                &lt;img src="..." alt="...">
+                &lt;figcaption>รูปที่ 1: คำอธิบายภาพ</figcaption>
+                &lt;/figure>
+            </pre>
+            <figure>
+                <img src="fie/723ca52e-3450-406a-83c5-3a7d40bd0cf8.png" alt="พื้นหลัง">
+                <figcaption></figcaption>
+            </figure>
+            <p>รูปที่ 1 : ตัวอย่างดารใส่คำอธิบายภาพด้วย figcaption</p>
+            <p class="note">ภารกิจ: ให้นักศึกษาทำหน้า "My Favoduct Place / Product / Technlogy" โดยมีภาพอย่างน้อย 5 ภาพ
+                และต้องมี 1 รูปแบบ gallery 2 รูปแบบ lmage Link 3 รูปพร้อม Caption</p>
+        </div>
+
+        <!-- For Group 9: Card 8: Local file tips -->
+        <section class="card module-3">
+            <h2>8) ใช้รูปจากเครื่อง (Local Images) VS Code</h2>
+            <p>จัดโฟลเดอร์รูปให้เป็นระเบียบ เช่น images/ แล้วอ้างอิงแบบ relative path</p>
+            <pre>my_project/
+                ├─ index.html
+                └─ images/
+                ├─ photo1.jpg
+                └─ banner.png
+                <img src="" alt="My Photo">
+            </pre>
+            <p>แนะนำให้ตั้งชื่อไฟล์รูปเป็นภาษาอังกฤษ ไม่มีช่องว่าง เช่น my-photo-1.jpg </p>
+        </section>
+
+        
+        <!-- For Group 10: Back to Tutorial -->
+        <a href="index.html" class="back-link"> ⬅️Back to HTML Tutorial</a>
+    </div>
+   
+
+
+</body>
+
+</html>
