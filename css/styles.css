@@ -97,13 +97,13 @@
             }          
             /* CSS For Group 1: Header  */
             header{
-                background-color: rgb(206, 189, 181);
+                background-color: rgb(181, 57, 0);
                 padding: 20px;
                 
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                box-shadow:5px 5px 5px rgb(0, 0, 0);
+                box-shadow:5px 5px 5px rgb(15, 3, 3);
                 
                 /*fixed header*/
                 position: fixed;
