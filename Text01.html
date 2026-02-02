@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+   h1{
+    color: aliceblue;
+    font-size: 40px;
+   }
+   
+   h2{
+    color: aliceblue;
+    font-size: 32px;
+   }
+   
+   body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(121, 69, 170);
+
+   }
+
+   
+   .container {
+            width: 900px;
+            margin: auto;
+            
+        }
+
+    header{background-color: rgb(21, 67, 87);
+                padding: 0px;
+                max-height: 100px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;               
+                top: 0px;
+                width: 100%;
+                margin-bottom:  20px;
+            }
+
+            
+           .font{
+            font-size: 16px;
+           }
+
+            .card{
+                background-color: aliceblue;
+                border-radius: 20px;
+                
+               padding: 10px;
+                max-height: 100px;
+                margin-bottom:  20px;
+            }
+            .card1{
+            background-color: aliceblue;
+            border-radius: 20px;
+            padding: 100px 35px;
+            margin-bottom:  20px;
+            box-shadow: 0 4px 12px rgb(181, 171, 167);
+            }
+            
+            .list-menu ul{
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                gap: 20px;              
+                justify-content: center;
+                margin-bottom:  20px;
+                
+                
+            }
+            .list-menu li{
+                margin-top:30px;
+            transition: transform 0.3s ease;
+             
+            }
+            
+            
+            .list-menu li:hover {
+                margin-top:30px;
+            transform: translateY(-5px);
+            
+            }            
+           
+            .list-menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-align: 16px;
+            color: rgb(20, 11, 189);
+
+
+            /* background-color: #c055a0; */
+            background:linear-gradient(135deg,rgb(8, 178, 230));  /* background:linear-gradient .ใช้สำหรับการไล่สี*/
+            
+            padding: 8px 12px;
+            border-radius: 6px;
+           
+        }
+        .list-menu a:hover {
+             background:linear-gradient(rgb(199, 112, 5));
+             box-shadow: 0 4px 15px rgb(236, 106, 0);
+        }
+        footer {
+                background-color: rgb(29, 152, 189);
+                color: #ffffff;
+                text-align: center;
+                margin-top: 50px;
+                padding: 10px;
+                font-size: 16px;
+            }
+            
+      
+
+        .card3 {
+            background-color: rgb(204, 86, 2);
+            border-radius: 20px;
+            padding: 200px;
+            width:50px ;
+            height:50px ;
+        }
+
+        .grade ul{
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                gap: 20px;              
+                justify-content: center;
+                margin-bottom:  20px;
+                
+                
+            }
+            .grade li{
+                margin-top:30px;
+            transition: transform 0.3s ease;
+             
+            }
+            
+            
+            .grade li:hover {
+                margin-top:30px;
+            transform: translateY(-5px);
+            
+            }            
+           
+            .grade a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-align: 16px;
+            color: rgb(20, 11, 189);
+
+
+            /* background-color: #c055a0; */
+            background:linear-gradient(135deg,rgb(8, 178, 230));  /* background:linear-gradient .ใช้สำหรับการไล่สี*/
+            
+            padding: 8px 12px;
+            border-radius: 6px;
+           
+        }
+        .grade a:hover {
+             background:linear-gradient(rgb(49, 0, 0));
+             box-shadow: 0 4px 15px rgb(0, 0, 0);
+        }
+
+         .card5{
+                background-color: rgb(185, 75, 6);
+                border-radius: 20px;
+                box-shadow: 40px chocolate;
+                padding: 10px;
+                max-height: 100px;
+                margin-bottom:  20px;
+                text-align: center;
+            }
+            
+            .card7 {
+           
+            background: rgb(255, 255, 255);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+         .profile {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .profile img {
+            width: 150px; /* ← ปรับขนาดรูปตรงนี้ */
+            border-radius: 10px;
+            
+
+            
+        }
+        .imge-link img {
+        width: 260;
+        border-radius: 12px;
+        transition: 0.3s;
+        
+    }
+    .imge-link img:hover{
+        transform: scale(1.03);
+        box-shadow:0 4px 12px #58043a;
+    }
+     .img_small {
+                width: 100px;
+                height: auto;
+            }
+         img {
+                max-width: 100%;
+                height: auto;
+                }
+
+         
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚รายงานผลการเรียน</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="list-menu">
+                <ul>
+                 <li><a href="">👨‍🎓ข้อมูลนักศึกษา</a></li>  
+                 <li><a href="">📚ผลการเรียน</a></li> 
+                 <li><a href="">📞ติดต่อ</a></li>
+                </ul>
+            </div>
+        </div>
+        
+<div class="card7">
+        <h2>ข้อมูลนักศึกษา</h2>
+        <div class="profile" >
+             <a class="imge-link" href="" target="_blank">
+            <img class="img_small" src="../fie/logo.jpg" alt="รูปนักศึกษา"></a >
+            <!-- สามารถปรับขนาดรูปได้ที่ CSS -->
+            <div>
+                <p><b>รหัสนักศึกษา:</b> 674230005</p>
+                <p><b>ชื่อ - นามสกุล:</b> ปวเรศ ภักดีเจริญ</p>
+                <p><b>หมู่เรียน:</b> 67/43</p>
+            </div>
+        </div>        
+    </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="card">
+            <div class="list-menu">
+                <ul>
+                 <li><a href="">📚ปี1เทอม1</a></li>  
+                 <li><a href="">📚ปี1เทอม2</a></li> 
+                 <li><a href="">📚ปี2เทอม1</a></li>
+                </ul>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        <div class="card5">
+            <h1>💡เกรดเฉลียสะสม: 3.05</h1>
+        </div>
+
+            </div>
+<footer>&copy; 2024 Wedmaster by Pawaret.ID 674230005.
+                Nakuno Pathom Rajabhat University
+</footer> 
+</body>
+</html>
