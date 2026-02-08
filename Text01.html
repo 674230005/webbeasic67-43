@@ -14,52 +14,113 @@
    h2{
     color: aliceblue;
     font-size: 32px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+   
    }
+
+   p{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 6px 0; 
+     
+   }
+
+   
+
+   code {
+                background-color: rgb(214, 169, 114);
+                border-radius: 5px;
+                padding: 5px 6px;
+
+            }
    
    body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(121, 69, 170);
 
    }
-
-   
-   .container {
-            width: 900px;
-            margin: auto;
-            
-        }
-
-    header{background-color: rgb(21, 67, 87);
-                padding: 0px;
-                max-height: 100px;
-                display: flex;
-                align-items: center;
-                flex-direction: column;               
-                top: 0px;
-                width: 100%;
-                margin-bottom:  20px;
-            }
-
-            
-           .font{
-            font-size: 16px;
-           }
-
-            .card{
-                background-color: aliceblue;
-                border-radius: 20px;
-                
-               padding: 10px;
-                max-height: 100px;
-                margin-bottom:  20px;
-            }
+  
+   header{
+       background-color: rgb(21, 67, 87);
+       padding: 0px;
+       max-height: 100px;
+       display: flex;
+       align-items: center;
+       flex-direction: column;               
+       top: 0px;
+       width: 100%;
+       margin-bottom:  20px;
+    }
+    
+    footer {
+        background-color: rgb(29, 152, 189);
+        color: #ffffff;
+        text-align: center;
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .container {
+             width: 900px;
+             margin: auto;
+             
+         }
+    
             .card1{
-            background-color: aliceblue;
-            border-radius: 20px;
-            padding: 100px 35px;
-            margin-bottom:  20px;
-            box-shadow: 0 4px 12px rgb(181, 171, 167);
+                background-color: rgb(255, 255, 255);
+                border-radius: 10px;
+                
+               padding: 15px;
+                max-height: 100px;
+                margin-bottom:  20px;
             }
+            
+            .card2 {
+           
+            background: rgb(255, 255, 255);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #ccc;
+        }
+            
+        .card3{
+            background: rgb(255, 149, 0);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #ccc; 
+            width: 620px;             
+    }
+
+    .card4{
+                border-radius: 10px;
+               padding: 15px;
+                max-height: 100px;
+                margin-bottom:  20px;
+            }
+        
+        
+        .card5{
+                background-color: rgb(185, 75, 6);
+                border-radius: 20px;
+                box-shadow: 0 4px 15px rgb(255, 98, 0);
+                padding: 10px;
+                max-height: 100px;
+                margin-bottom:  20px;
+                text-align: center;
+            }
+
+        .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    }
+
+            
+       
             
             .list-menu ul{
                 display: flex;
@@ -104,31 +165,17 @@
              background:linear-gradient(rgb(199, 112, 5));
              box-shadow: 0 4px 15px rgb(236, 106, 0);
         }
-        footer {
-                background-color: rgb(29, 152, 189);
-                color: #ffffff;
-                text-align: center;
-                margin-top: 50px;
-                padding: 10px;
-                font-size: 16px;
-            }
+        
             
       
 
-        .card3 {
-            background-color: rgb(204, 86, 2);
-            border-radius: 20px;
-            padding: 200px;
-            width:50px ;
-            height:50px ;
-        }
 
         .grade ul{
                 display: flex;
                 list-style: none;
                 margin: 0;
                 padding: 0;
-                gap: 20px;              
+                gap: 30px;              
                 justify-content: center;
                 margin-bottom:  20px;
                 
@@ -143,71 +190,56 @@
             
             .grade li:hover {
                 margin-top:30px;
-            transform: translateY(-5px);
-            
             }            
            
             .grade a {
             text-decoration: none;
             color: white;
             font-weight: bold;
-            text-align: 16px;
+            text-align: px;
             color: rgb(20, 11, 189);
 
 
             /* background-color: #c055a0; */
             background:linear-gradient(135deg,rgb(8, 178, 230));  /* background:linear-gradient .ใช้สำหรับการไล่สี*/
             
-            padding: 8px 12px;
+            padding: 15px 70px;
             border-radius: 6px;
            
         }
         .grade a:hover {
-             background:linear-gradient(rgb(49, 0, 0));
-             box-shadow: 0 4px 15px rgb(0, 0, 0);
+             box-shadow: 0 4px 15px rgb(236, 95, 95);         
         }
 
-         .card5{
-                background-color: rgb(185, 75, 6);
-                border-radius: 20px;
-                box-shadow: 40px chocolate;
-                padding: 10px;
-                max-height: 100px;
-                margin-bottom:  20px;
-                text-align: center;
-            }
-            
-            .card7 {
-           
-            background: rgb(255, 255, 255);
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 5px #ccc;
-        }
+        .grade a .g{
+  color: red;
+  font-weight: bold;
+}
+
+         
 
          .profile {
             display: flex;
             gap: 20px;
             align-items: center;
+            justify-content: flex-end; 
+
         }
 
         .profile img {
-            width: 150px; /* ← ปรับขนาดรูปตรงนี้ */
-            border-radius: 10px;
-            
-
-            
+            width: 250px; /*ปรับขนาดรูป*/
+   
         }
         .imge-link img {
         width: 260;
-        border-radius: 12px;
+        border-radius: 999px;
         transition: 0.3s;
+        border: #000000 5px solid;
         
     }
     .imge-link img:hover{
         transform: scale(1.03);
-        box-shadow:0 4px 12px #58043a;
+        box-shadow:0 4px 12px #0021da;
     }
      .img_small {
                 width: 100px;
@@ -218,7 +250,19 @@
                 height: auto;
                 }
 
-         
+   
+
+    
+    .box{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.box div:first-child{
+  width: 160px;   
+}
+
 
     </style>
 </head>
@@ -227,58 +271,69 @@
         <h1>📚รายงานผลการเรียน</h1>
     </header>
     <div class="container">
-        <div class="card">
+        <div class="card1">
             <div class="list-menu">
                 <ul>
-                 <li><a href="">👨‍🎓ข้อมูลนักศึกษา</a></li>  
-                 <li><a href="">📚ผลการเรียน</a></li> 
-                 <li><a href="">📞ติดต่อ</a></li>
+                 <li><a href="#b1">👨‍🎓ข้อมูลนักศึกษา</a></li>  
+                 <li><a href="#b2">📚ผลการเรียน</a></li> 
+                 <li><a href="#b3">📞ติดต่อ</a></li>
                 </ul>
             </div>
         </div>
         
-<div class="card7">
-        <h2>ข้อมูลนักศึกษา</h2>
-        <div class="profile" >
-             <a class="imge-link" href="" target="_blank">
-            <img class="img_small" src="../fie/logo.jpg" alt="รูปนักศึกษา"></a >
-            <!-- สามารถปรับขนาดรูปได้ที่ CSS -->
-            <div>
-                <p><b>รหัสนักศึกษา:</b> 674230005</p>
-                <p><b>ชื่อ - นามสกุล:</b> ปวเรศ ภักดีเจริญ</p>
-                <p><b>หมู่เรียน:</b> 67/43</p>
-            </div>
+<div class="card2">
+    <div class="card-grid">
+        <div class="card3" id="b1">
+            <h2>👨‍🎓Mr.Pawaret Phackbeecharoen</h2>
+            <hr>
+           <div class="box">
+            <div><p>📚<b>รหัสนักศึกษา :</b></div>
+            <div><p><b>674230005</b></p></div>
+           </div>
+           <div class="box">
+            <div><p>👤<b>ชื่อ - นามสกุล :</b></div>
+            <div><p><b>ปวเรศ ภักดีเจริญ</b></p></div>
+           </div>
+           <div class="box">
+            <div><p>🎓<b>หมู่เรียน :</b></div>
+            <div><p><b>67/43</b></p></div>
+           </div>
+           <div class="box">
+            <div><p>👩‍🏫<b>อาจารย์ที่ปรึกษา :</b></div>
+            <div><p><b>อาจารย์พิชยา สุขปลั่ง</b></p></div>
+           </div>
+           <div class="box">
+            <div><p>📌<b>GitHub:</b></div>
+            <div><p><b><code>https://github.com/674230005/webbeasic67-43/</b></p></code></div>
+           </div>
+        </div>
+        <div class="profile">
+             
+            <a class="imge-link" href="" target="_blank">
+            <img id="b3" class="img_small" src="../fie/logo.jpg" alt="รูปนักศึกษา"></a >
         </div>        
+            </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-            <div class="card">
-            <div class="list-menu">
+            <div class="card4">
+            <div class="grade">
                 <ul>
-                 <li><a href="">📚ปี1เทอม1</a></li>  
-                 <li><a href="">📚ปี1เทอม2</a></li> 
-                 <li><a href="">📚ปี2เทอม1</a></li>
+                 <li><a href="">📚ปี1เทอม1: <span class="g">2.91</a></li></span>  
+                 <li><a href="">📚ปี1เทอม2: <span class="g">3.16</a></li></span> 
+                 <li><a href="">📚ปี2เทอม1: <span class="g">3.05</span></a></li>
                 </ul>
-            </div>
+            </div> 
             <div>
                 
             </div>
         </div>
-        <div class="card5">
+        <div class="card5" id="b2">
             <h1>💡เกรดเฉลียสะสม: 3.05</h1>
         </div>
 
             </div>
-<footer>&copy; 2024 Wedmaster by Pawaret.ID 674230005.
-                Nakuno Pathom Rajabhat University
+<footer><p>&copy;2024 Wedmaster by Pawaret.ID 674230005.</p>
+               <p>🎴Nakuno Pathom Rajabhat University</p>
 </footer> 
 </body>
 </html>
