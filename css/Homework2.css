@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Kanit", sans-serif;
+    background-color: rgb(247, 231, 201);
+    color: #333;            
+}
+
+.site-header{
+    background-color: rgb(255, 255, 255);
+                padding: 30px;
+                
+                
+                box-shadow:5px 5px 5px rgb(15, 3, 3);
+                
+          
+              
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.site-title{
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+.site-subtitle{
+    font-size: 0.875rem;
+    color: #cd0000;
+    
+}
+
+.nav-main{
+    list-style-type: none;  
+    display: flex;
+    
+}
+
+.nav-main li a {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 900;
+
+    display: block;
+    padding: 10px 15px;
+      text-decoration: none;
+      
+}
+
+.nav-main li a:hover {
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    font-size: 24px;
+
+    display: block;
+    padding: 10px 15px;
+    
+}
+
+.social-icons a{
+    font-size: 1.5rem;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #13057c;
+    text-decoration: none;
+    
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height:  40px;
+    margin-left: 10px
+    
+}
+
+.social-icons a:hover{
+    background-color: rgb(243, 236, 236);
+    color: rgb(0, 0, 0);
+    border: 0px;
+
+    transform: translateY(-5px);
+    
+    
+
+}
+
+.container {
+                max-width: 1200px;
+                margin: 180px  auto 20px;
+                margin-top:60px ;
+            }
+
+            .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    }
+
+    .card {
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            padding: 50px 35px;
+            margin-bottom:  20px;
+            box-shadow: 0 4px 12px rgb(181, 171, 167);
+            
+        }
+
+        p{
+            margin-bottom: 50px;
+        }
+
+        .profile {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom:  20px;
+            
+        }
+
+        .profile img {
+            width: 500px; /* ← ปรับขนาดรูปตรงนี้ */
+            border-radius: 10px;
+            
+        }
+
+        h2{
+            margin-bottom: 20px;
+        }
+        
+        .Button{
+        color: #05134e;
+                text-decoration: none;
+                background-color: rgb(8, 102, 137) ;
+                display:inline-block;
+                text-align: center;
+                padding: 10px 24px;
+                border-radius: 20px;
+                margin-bottom: 50px;
+                
+            }
+        .Button:hover{
+            color: #ffffff;
+            text-decoration: none;
+            background-color: rgb(50, 147, 196);  
+        }
+        footer {
+        background-color: rgb(0, 0, 0);
+        color: #ffffff;
+        text-align: center;
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+       

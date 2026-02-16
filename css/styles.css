@@ -1,4 +1,4 @@
-<style>
+
             /* CSS Global  */
 
             * {
@@ -21,12 +21,12 @@
             }
 
             .container {
-                max-width: 1200;
+                max-width: 1200px;
                 margin: 180px  auto 20px;
                 
 
             }
-
+/* บอเดอร์เรเดียสงพิกเซ้วรูป */
             /* Card base */
             .card {
             background-color: rgb(243, 235, 208);
@@ -147,13 +147,11 @@
         .list-menu a:hover {
              background:linear-gradient(135deg,rgb(255, 0, 0),rgb(199, 112, 5));
         }
-            
-            
-            
-            
-            
-            
-            
+   
+
+
+
+        
             /* CSS For Group 2: Card 1: Basics  */
             .position {
                 display: flex;
@@ -258,4 +256,4 @@
                 text-decoration: none;
                 background-color: rgb(249, 255, 254);       
             }
-            </style>
+            
