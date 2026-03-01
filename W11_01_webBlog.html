@@ -1,0 +1,435 @@
+<!--
+    สอนการใช้ google fonts
+    การสร้างตาราง
+    การสร้างฟอร์ม
+    การจัดวางเลย์เอาต์ด้วย CSS Grid และ Flexbox
+    responsive design เ
+    เบื้องต้น
+    -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawaret's wed Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <!-- Hearder-->
+    <header class="site-header">
+        <div class="wrapper">
+            <div class="header-inner">
+                <div>
+                    <h3 class="site-title">Pawaret's wed Blog</h3>
+                    <p class="site-subtitle">รวมเนื้อหาเกี่ยวกับเทคโนโลยี AI น่าสนใจ</p>
+                </div>
+                <div class="social-icons">
+                    <a href="">f</a>
+                    <a href="">t</a>
+                    <a href="">in</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+
+    <!--Nvabar-->
+    <nav class="main-nav">
+        <div class="wrapper">
+            <ul class="nav-main">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">AI Technology</a></li>
+                <li><a href="">Machine Learning</a></li>
+                <li><a href="">Deep Learning</a></li>
+                <li><a href="">AI Tools</a></li>
+                <li><a href="">AI News</a></li>
+            </ul>
+
+
+        </div>
+    </nav>
+
+
+    <!--Hero Section-->
+    <div class="hero-contaent">
+        <div class="wrapper">
+            <h2 class="hero-title">🚀 เนื้อหาแนะนำสำหรับคุณ</h2>
+            <div class="hero-grid">
+                <article class="hero-item">
+                    <h3 class="hero-item-title">💡 เทคนิค CSS Grid ที่ทุกคนควรรู้</h3>
+                    <p>เรียนรู้วิธีใช้ CSS Grid Layout เพื่อสร้างเลย์เอาต์ที่ซับซ้อนและยืดหยุ่น
+                        พร้อมตัวอย่างการใช้งานจริง และเทคนิคขั้นสูงที่จะทำให้เว็บไซต์ของคุณโดดเด่น</p>
+                    <a href="" class="read-more">อ่านเพิ่มเติม</a>
+                </article>
+                <article class="hero-item">
+                    <h3 class="hero-item-title">🎨 การออกแบบ UI/UX ที่ใช้งานง่าย</h3>
+                    <p>หลักการออกแบบส่วนติดต่อผู้ใช้ที่ดี เริ่มตั้งแต่การเลือกสีที่เหมาะสม การจัดวาง Typography
+                        และการสร้างประสบการณ์ผู้ใช้ที่น่าประทับใจ
+                        เรียนรู้เพิ่ม</p>
+                    <a href="" class="read-more">อ่านเพิ่มเติม</a>
+                </article>
+                <article class="hero-item">
+                    <h3 class="hero-item-title">⚡ การปรับปรุงประสิทธิภาพเว็บไซต์</h3>
+                    <p>เทคนิคการทำให้เว็บไซต์โหลดเร็วขึ้น ตั้งแต่การ optimize รูปภาพ การใช้ CDN การ minify code
+                        และการวัดผลประสิทธิภาพด้วยเครื่องมือต่างๆ
+                        ดูรายละเอียด</p>
+                    <a href="" class="read-more">อ่านเพิ่มเติม</a>
+                </article>
+                <article class="hero-item">
+                    <h3 class="hero-item-title">🔥 JavaScript ES6+ ที่ควรรู้</h3>
+                    <p>ฟีเจอร์ใหม่ๆ ของ JavaScript ที่จะทำให้การเขียนโค้ดของคุณทันสมัยและมีประสิทธิภาพมากขึ้น เช่น Arrow
+                        Functions, Async/Await, Destructuring และอื่นๆ
+                        เริ่มเรียน</p>
+                    <a href="" class="read-more">อ่านเพิ่มเติม</a>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Page Content-->
+    <div class="Page">
+        <div class="wrapper">
+            <div class="content-grid">
+                <!--Lefe side-->
+                <main class="post-list">
+                    <!--card01-->
+                    <div class="card">
+                        <p class="card-headline">
+                            CATEGORY ARCHIVES: <b>RESPONSIVE DESIGN</b>
+                        </p>
+
+                        <article>
+                            <header class="post-header">
+                                <h3>
+                                    คำสั่ง CSS สำคัญสำหรับการเขียนเว็บ Responsive
+                                </h3>
+                                <div class="date-cirele">
+                                    <span class="day">30</span>
+                                    <span>AUG</span>
+                                </div>
+                            </header>
+                            <div class="post-image">
+                                <img src="https://jooinn.com/images/beautiful-view-38.jpg" alt="view Photo">
+                            </div>
+                            <p class="post-description">
+                                ภาพตัวอย่างการแสดงผล responsive บนอุปกรณ์ต่างๆ
+                                รวมคำสั่ง CSS ที่จำเป็นสำหรับการสร้างเว็บไซต์ที่รองรับทุกขนาดหน้าจอ เริ่มจาก media
+                                queries, flexbox, grid layout และเทคนิคการใช้ viewport units
+                                เพื่อให้เว็บของคุณดูดีในทุกอุปกรณ์ …
+                            </p>
+                            <span>|</span><a href=""> read more</a>
+
+                            <div class="post-footer">
+                                <span>Tags:</span>
+                                <a href="">responsive design</a><span>•</span>
+                                <a href="">media queries</a><span>•</span>
+                                <a href="">flexbox</a><span>•</span>
+                                <a href="">CSS grid</a>
+                            </div>
+                        </article>
+                    </div>
+                    <!--card02-->
+                    <div class="card">
+                        <p class="card-headline"><b>CATEGORY ARCHIVES:</b> CSS DISPLAY PROPERTY
+                        </p>
+                        <header class="post-header">
+                            <h3>
+                                เปรียบเทียบ display: block vs inline-block
+                            </h3>
+                            <div class="date-cirele">
+                                <span class="day">28</span>
+                                <span>AUG</span>
+                            </div>
+                        </header>
+                        <p class="post-description">ตารางด้านล่างแสดงความแตกต่างระหว่าง display: block และ display:
+                            inline-block เพื่อช่วยให้เข้าใจการเลือกใช้ display property ที่เหมาะสม</p>
+
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th style="width:25%;">คุณสมบัติ</th>
+                                    <th style="width:37.5%;">display: block</th>
+                                    <th style="width:37.5%;">display: inline-block</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="feature">การจัดเรียงองค์ประกอบ</td>
+                                    <td>📦 แต่ละตัวอยู่บรรทัดใหม่</td>
+                                    <td>✅ เรียงต่อกันในบรรทัดเดียว</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">ความกว้างเริ่มต้น</td>
+                                    <td>❌ กินพื้นที่เต็มความกว้าง (100%)</td>
+                                    <td>✅ ตามเนื้อหาภายใน (auto)</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">การกำหนด width และ height</td>
+                                    <td>✅ กำหนดได้ทั้ง width และ height</td>
+                                    <td>✅ กำหนดได้ทั้ง width และ height</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">margin และ padding</td>
+                                    <td>✅ ใช้ได้ครบทุกทิศทาง</td>
+                                    <td>✅ ใช้ได้ครบทุกทิศทาง</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">vertical-align</td>
+                                    <td>❌ ไม่มีผลกับ block element</td>
+                                    <td>✅ สามารถใช้ได้ (top, middle, bottom)</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">ช่องว่างระหว่างองค์ประกอบ</td>
+                                    <td>🚫 ไม่มีปัญหาช่องว่าง</td>
+                                    <td>❌ มีช่องว่างจาก whitespace ใน HTML</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">การใช้งานที่เหมาะสม</td>
+                                    <td>📄 div, section, header, footer</td>
+                                    <td>🎯 navigation menu, button groups</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="post-description">สรุป: display: block เหมาะสำหรับโครงสร้างหลักของหน้าเว็บ ส่วน
+                            display: inline-block เหมาะสำหรับการสร้างเมนู หรือองค์ประกอบที่ต้องเรียงต่อกัน</p>
+
+                        display property
+                        <div class="post-footer">
+                            <span>Tags:</span>
+                            <a href=""> CSS</a><span>•</span>
+                            <a href=""> display</a>
+                            <a href=""> property</a>
+
+                        </div>
+                    </div>
+
+
+                    <!--card03-->
+
+                    <div class="card">
+                        <div class="contect-form-card">
+                            <div class="contact-title">
+                                <h2>📞 ติดต่อเรา</h2>
+                            </div>
+                            <form action="" method="">
+                                <div class="form-row">
+                                    <div class="for-group">
+                                        <label class="for-label" for="fname">ชื่อ</label>
+                                        <input class="fonm-input" type="text" id="fname" name="fname"
+                                            placeholder="ชื่อของคุณ">
+                                    </div>
+                                    <div class="for-group">
+                                        <label for="lname" class="for-label">นามสกุล</label>
+                                        <input class="fonm-input" type="text" id="lname" name="lname"
+                                            placeholder="นามสกุลของคุณ">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="for-group">
+                                        <label class="for-label" for="email">อีเมล </label>
+                                        <input class="fonm-input" type="text" id="email" name="email"
+                                            placeholder="ป้อนอีเมล">
+                                    </div>
+                                    <div class="for-group">
+                                        <label class="for-label" for="phone">เบอร์โทรศัพท์</label>
+                                        <input class="fonm-input" type="tel" id="phone" name="phone"
+                                            placeholder="เบอร์">
+                                    </div>
+                                </div>
+                                <div class="for-group">
+                                    <label class="for-label" for="company">บริษัท/องค์กร</label>
+                                    <input class="fonm-input" type="text" id="company" name="company"
+                                        placeholder="ป้อนชื่อบริษัท">
+                                </div>
+                                <div class="for-group">
+                                    <label class="for-label" for="subject">หัวข้อที่สนใจ รายละเอียด</label>
+                                </div>
+                                <div class="for-group">
+                                    <select class="fonm-select" name="subject" id="subject">
+                                        <option value="AI">AI</option>
+                                        <option value="IOT">IOT</option>
+                                        <option value="Machune Learning">Machune Learning</option>
+                                        <option value="Blackchain">Blackchain</option>
+                                </div>
+                                </select>
+                                <div class="for-group">
+                                    <label class="for-label" for="detail">รายละเอียด</label>
+                                    <textarea class="form-textarea" name="detail" id="detail"
+                                        placeholder="เขียนข้อความคุณที่นี้">
+                                    </textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="interests" class="form-label">ความสนใจเพิ่มเดิม</label>
+                                    <div class="form-checkbox-group">
+
+                                        <input type="checkbox" id="interests1" name="interests[]"
+                                            value="newsletter"><span>
+                                            ต้องการรับข่าวสารทาง email</span>
+
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="interests2" name="interests[]"
+                                                value="consult"><span>
+                                                สนใจบริการปรึกษา</span>
+                                        </div>
+
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="interests3" name="interests[]"
+                                                value="partnership"><span>
+                                                สนใจความร่วมมือ</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="form-button" type="submit">ส่งข้อความ</button>
+                                        <button class="form-button-reset" type="reset">ล้างข้อมูล </button>
+                                    </div>
+
+                            </form>
+                        </div>
+                </main>
+                <!--rigth side-->
+                <aside>
+
+
+                    <!--widget01-->
+                    <div class="widget">
+                        📨 ส่งข้อความ
+                        สวัสดีครับ ยินดีต้อนรับ
+                        ผมชื่อ Suksawat เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME
+                        และ Startup
+                        รูปผู้เขียน
+                        กดติดตามใน Facebook
+                    </div>
+                    <!--widget02-->
+                    <div class="card">
+                        <div class="contect-message-card">
+                            <div class="contact-title-message">
+                                <h3>📧 รับข่าวสารใหม่</h3>
+                            </div>
+                            <div class="for-group">
+                                <label for="lname" class="for-label-message">ชื่อของคุณ</label>
+                                <input class="fonm-message-input" type="text" id="lname" name="lname"
+                                    placeholder="ใส่ชื่อของคุณ">
+                            </div>
+                            <div class="for-group">
+                                <label class="for-label-message" for="email">อีเมล </label>
+                                <input class="fonm-message-input" type="text" id="email" name="email"
+                                    placeholder="xxxxxx@gmail.com">
+                            </div>
+                            <div class="for-group">
+                                <label class="for-label-message" for="subject">หัวข้อที่สนใจ รายละเอียด</label>
+                                <select class="fonm-message-select" name="subject" id="subject">
+                                    <option value="หัวข้อ">ทุกหัวข้อ</option>
+                                    <option value="เดียว">หัวข้อเดียว</option>
+                                </select>
+                            </div>
+
+                            <div class="">
+                                <button class="form-button" type="submit">
+                                    <h3>🚀สมัครเลย!</h3>
+                                </button>
+                            </div>
+
+
+                            <div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--widget03-->
+                    <div class="card">
+                        <div class="contect-follow-card">
+                            <div class="contact-title-message">
+                                <h3>📧 รับข่าวสารใหม่</h3>
+                            </div>
+                            <div class="for-group">
+                                <label for="lname" class="for-label-message">ชื่อของคุณ</label>
+                                <input class="fonm-message-input" type="text" id="lname" name="lname"
+                                    placeholder="ชื่อของคุณ">
+                            </div>
+                            <div class="for-group">
+                                <label class="for-label-message" for="subject">เรื่องที่จะติดต่อ</label>
+                                <select class="fonm-message-select" name="subject" id="subject">
+                                    <option value="หัวข้อ">เลือกเรื่องที่จะติดต่อ</option>
+                                    <option value="เดียว">แจ้งปัญหา</option>
+                                </select>
+                            </div>
+                            <div class="for-group">
+                                <label class="for-label" for="detail">รายละเอียด</label>
+                                <textarea class="form-textarea-follow" name="detail" id="detail"
+                                    placeholder="เขียนข้อความคุณที่นี้">
+                                    </textarea>
+                            </div>
+
+
+                            <div>
+                                <button class="form-button" type="submit">
+                                    <h3>📤ส่งเลย</h3>
+                                </button>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <!--widget04-->
+                    <div class="widget">
+                        กล่อง Facebook Like (ตัวอย่าง)
+                        203,779 คนถูกใจ
+
+                    </div>
+
+
+
+                    <!--widget05-->
+                    <div class="widget">
+                        Sponsor
+                        พื้นที่โฆษณา / วิดีโอ
+
+                    </div>
+
+
+
+
+
+
+
+
+                </aside>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Footer-->
+    <footer></footer>
+
+
+</body>
+
+</html>

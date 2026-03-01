@@ -62,7 +62,7 @@ a{
 }
 
 .social-icons a{
-    font-size: 1rem;
+    font-size: 1.2rem;
      border: 1px solid #555;
     border-radius: 50%;
     color: black;
@@ -223,4 +223,377 @@ background-color: rgb(67, 67, 168);
     text-align: center;
     margin-bottom: 20px;
 }
+/*Page sect /* ซ่อนส่วนที่เกินขอบเขตของกล่อง */
+.content-grid{
+    display: grid;
+    grid-template-columns: 2fr 0.9fr;
+    gap: 20px;
+    margin-top: 20px;
+}
 
+/*LEFT Side /* */
+.card{
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 18px;
+    margin-top: 10px;
+
+}
+.card+.card{
+    margin-top: 10px;
+}
+
+.post-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-headline{
+    font-size: 0.687rem;
+    color: #777;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-cirele{
+    background-color: #1e8bc3;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    color: #fff;
+    font-size: 0.69rem;
+    margin-bottom: 10px;
+}
+
+.date-cirele span.day{
+font-size: 1.2rem;
+font-weight: 700;
+}
+
+.post-description{
+    font-size: 0.82rem;
+    color: #555;
+    margin: 10px 0;
+    
+}
+/*Css1 /* */
+.post-image{
+    height: 200px;
+    overflow: hidden;
+    
+}
+.post-image img{
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+
+}
+
+.post-footer{
+    height: 0.68rem;
+    color: #000000;
+
+    border-top: 1px solid rgb(255, 255, 255);
+    margin: 10px 0;
+    
+    display: flex;
+    gap: 8px;
+}
+
+/*Css2 tadil /* */
+
+.comparison-table {
+    border: 2px solid #ffffff;
+    border-collapse: collapse;/
+}
+
+.comparison-table td  {
+    border: 2px solid #000000;
+    padding: 15px;
+}
+.comparison-table tr td  {
+    background-color: #ffffff;
+}
+.comparison-table tr:nth-child(even) td {
+    background-color: #ffb1b1;
+}
+.comparison-table tr:hover td {
+    background-color: #c9c9c9;
+}
+
+.comparison-table th{
+    border: 2px solid #1d0e67;
+    background: linear-gradient(45deg,rgb(9, 51, 110),rgb(84, 108, 245));
+    color: #ffffff;
+    padding: 15px;
+}
+
+.feature{
+font-weight: 600;
+color: #333;
+background-color: #1e8bc3;
+}
+
+.txt-gray{
+font-weight: 500;
+color: #777;
+}
+
+.txt-green{
+font-weight: 500;
+color: #23c60a;
+}
+
+.txt-red{
+font-weight: 500;
+color: #ff0000;
+}
+
+
+
+/*Rigth Side /* */
+.widget{
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 18px;
+}
+
+.widget+.widget{
+    margin-top: 10px;
+}
+
+.widget{
+    background-color: #fff;
+    border-radius: 4px;
+
+    margin-top: 10px;
+}
+
+/*fom L sing*/
+.contact-title{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgb(0, 166, 255);
+
+}
+.contect-form-card{
+    background-color: #0545a5b6;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(25, 24, 59, 0.775);
+    border: 1px solid crimson;
+    margin-bottom: 8px;
+}
+
+.fonm-input,
+.fonm-select,
+.fonm-textarea {
+width: 100%; 
+padding: 12px 15px;
+border: radius 8px; 
+font: 0.9rem;
+}
+
+.fonm-select{
+    border: 2px solid #ccc;
+}
+
+.contect-form-card .fonm-input,
+.contect-form-card .fonm-select,
+.contect-form-card .fonm-textarea {
+background-color: #2600e1;
+border: 2px solid cornflowerblue;
+color: #000000;
+border-radius: 8px;
+}
+
+.for-label{
+    font-size: 0.82rem;
+    color: #000000;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    
+    
+
+}
+
+.for-group{
+margin-bottom: 15px;
+
+}
+.form-row{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+margin-bottom: 5px;
+
+}
+
+.form-checkbox-group{
+margin-top: 10px;
+display: flex;
+gap: 15px;
+}
+
+.checkbox-item{
+display: flex;
+align-items: center;
+font-size: 0.82rem;
+}
+
+.checkbox-item input[type="checkbox"]{
+    transform: scale(1.15);
+    accent-color: #ff6b6b;
+}
+.form-textarea{
+    resize: vertical;
+    width: 100%;           
+    min-height: 100px;
+    border-radius: 8px;
+    box-sizing: border-box; 
+}
+
+.form-button{
+    width: 100%;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    background: linear-gradient(45deg, #ff6b6b 0%, #f06595 100%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.form-button-reset{
+    width: 100%;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    background: linear-gradient(45deg, #831212 0%, #652a3f 100%);
+    margin-bottom: 20px;
+}
+.form-button:hover,
+.form-button-reset:hover {
+    background: linear-gradient(45deg, #3c1905, #6b46c1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+}
+
+
+
+/* Focus: ฟอร์มหลัก */
+.contact-form-main-card .form-input:focus,
+.contact-form-main-card .form-select:focus,
+.contact-form-main-card .form-textarea:focus {
+    outline: none;
+    background: #fff;
+    border-color: #021772;
+    box-shadow: 0 0 0 3px rgba(222, 3, 3, 0.18);
+    transform: translateY(-1px);
+}
+
+.contect-message-card{
+    background: linear-gradient(45deg, #2c745b, #6fe252);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(25, 24, 59, 0.775);
+    border: 1px solid crimson;
+    margin-bottom: 8px;
+}
+
+.contact-title-message{
+    font-size: 1.0rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+
+.ccontect-message-card .fonm-message-select,
+.contect-message-card .fonm-message-input {
+background-color: #ffffff;
+border: 2px solid rgb(0, 0, 0);
+color: #000000;
+}
+
+.fonm-message-input,
+.fonm-message-select,
+.fonm-textarea {
+width: 100%; 
+padding: 12px 15px;
+border: radius 8px; 
+font: 0.9rem;
+border-radius: 8px;
+}
+
+.fonm-message-select{
+    border: 2px solid #000000;
+}
+
+.for-label-message{
+    font-size: 0.82rem;
+    color: #ffffff;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    
+    
+
+}
+
+
+.contect-follow-card{
+    background: linear-gradient(45deg, #5e07d9, #3a156e);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(25, 24, 59, 0.775);
+    border: 1px solid crimson;
+    margin-bottom: 8px;
+}
+
+.form-textarea-follow{
+    resize: vertical;
+    width: 100%;           
+    min-height: 100px;
+    border-radius: 8px;
+    box-sizing: border-box; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 📧 รับข่าวสารใหม่
+                                    ชื่อของคุณ อีเมล สนใจเนื้อหาด้านไหน 🚀 สมัครเลย!
