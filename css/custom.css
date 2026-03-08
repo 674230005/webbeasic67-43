@@ -313,7 +313,7 @@ html {
     height: 0.68rem;
     color: #000000;
 
-    border-top: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(207, 207, 207);
     margin: 10px 0;
 
     display: flex;
@@ -648,6 +648,76 @@ margin-top: 8px;
     justify-content: center;
     align-items: center;
 }
+/*gold-table*/
+:root {
+    --line:  #eedcb5;
+    --Bg01:  #dcb768d3;
+    --Bg02:  #c6ba9cd3;
+    --Bg03:  #a5cf9dd3;
+}
+
+.wrap-gold-table{
+    background-color:var(--Bg02) ;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 2px solid var(--line);
+    overflow: hidden; /*ซ้อนส่วนเกิน*/
+}
+.gold-table{
+    border: 2px solid var(--line);
+    border-collapse: collapse;
+    width: 100%;  
+}
+
+.gold-table thead th{
+    background-color: var(--Bg01);
+}
+
+.gold-table tbody th{
+    background-color: var(--Bg01);
+}
+.gold-table th,
+.gold-table td  {
+    border: 1px solid var(--line);
+    padding: 10px 2px;  
+}
+.gold-table .total th,
+.gold-table .total td{
+    background-color: var(--Bg03);
+}
+
+.icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.gold-table td,
+.gold-table th{
+    text-align: center;
+}
+
+.price-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.up {
+    border-bottom:  10px solid rgb(23, 128, 16);
+    
+}
+
+.dowm {
+    border-top: 10px solid rgb(255, 5, 5);
+}
+
+.dowmBG {
+    background-color:  rgb(213, 141, 141);
+}
 
 .footer{
     background-color: #000000;
@@ -660,7 +730,6 @@ margin-top: 8px;
     justify-content: center;
     align-items: center;
 }
-
 
 
 
