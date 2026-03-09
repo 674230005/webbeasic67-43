@@ -694,9 +694,13 @@ margin-top: 8px;
     border-right: 6px solid transparent;
 }
 
-.gold-table td,
+
 .gold-table th{
     text-align: center;
+}
+
+.gold-table td{
+    text-align: right;
 }
 
 .price-up{
