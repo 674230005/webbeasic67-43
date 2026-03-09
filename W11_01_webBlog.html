@@ -47,6 +47,10 @@
     <!--Nvabar-->
     <nav class="main-nav">
         <div class="wrapper">
+            <div id="hamburger-menu">
+                <span></span>
+            </div>
+            <div id="menu">
             <ul class="nav-main">
                 <li><a href="" class="active">Home</a></li>
                 <li><a href="">AI Technology</a></li>
@@ -55,8 +59,7 @@
                 <li><a href="">AI Tools</a></li>
                 <li><a href="">AI News</a></li>
             </ul>
-
-
+            </div>
         </div>
     </nav>
 
@@ -105,12 +108,12 @@
                 <!--Lefe side-->
                 <main class="post-list">
                     <!--card01-->
-                    <div class="card">
+                    <div class="card order-box-image">
                         <p class="card-headline">
                             CATEGORY ARCHIVES: <b>RESPONSIVE DESIGN</b>
                         </p>
 
-                        <article>
+                        <article >
                             <header class="post-header">
                                 <h3>
                                     คำสั่ง CSS สำคัญสำหรับการเขียนเว็บ Responsive
@@ -141,7 +144,7 @@
                         </article>
                     </div>
                     <!--card02-->
-                    <div class="card">
+                    <div class="card order-box-table">
                         <p class="card-headline"><b>CATEGORY ARCHIVES:</b> CSS DISPLAY PROPERTY
                         </p>
                         <header class="post-header">
@@ -218,7 +221,7 @@
 
                     <!--card03-->
 
-                    <div class="card">
+                    <div class="card order-box-form" id="contect">
                         <div class="contect-form-card">
                             <div class="contact-title">
                                 <h2>📞 ติดต่อเรา</h2>
@@ -269,14 +272,14 @@
                                     <textarea class="form-textarea" name="detail" id="detail"
                                         placeholder="เขียนข้อความคุณที่นี้">
                                     </textarea>
+                                    <span>ต้องการรับข่าวสารทาง email</span>
                                 </div>
+                                
                                 <div class="form-group">
-                                    <label for="interests" class="form-label">ความสนใจเพิ่มเดิม</label>
-                                    <div class="form-checkbox-group">
-
-                                        <input type="checkbox" id="interests1" name="interests[]"
-                                            value="newsletter"><span>
-                                            ต้องการรับข่าวสารทาง email</span>
+                                    <input type="checkbox" id="interests1" name="interests[]"
+                                    value="newsletter">
+                                                <label for="interests" class="form-label">ความสนใจเพิ่มเดิม</label>
+                                                <div class="form-checkbox-group">
 
                                         <div class="checkbox-item">
                                             <input type="checkbox" id="interests2" name="interests[]"
@@ -299,10 +302,10 @@
                         </div>
                 </main>
                 <!--rigth side-->
-                <aside>
+                <aside class="sidehar-widget">
 
                     <!--widget01-->
-                    <div class="widget">
+                    <div class="widget order-w-intro">
                         <div class="widget-title">สวัสดีครับ ยินดีต้อนรับ</div>
                         <p class="post-description">
                             ผมชื่อ Suksawat เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ
@@ -313,7 +316,7 @@
                     </div>
 
                     <!--widget02-->
-                    <div class="card">
+                    <div class="card order-w-f-green">
                         <div class="contect-message-card">
                             <div class="contact-title-message">
                                 <h3>📧 รับข่าวสารใหม่</h3>
@@ -349,7 +352,7 @@
                     </div>
 
                     <!--widget03-->
-                    <div class="card">
+                    <div class="card order-w-purple">
                         <div class="contect-follow-card">
                             <div class="contact-title-message">
                                 <h3>📧 ติดต่อด้วน</h3>
@@ -382,7 +385,7 @@
 
 
                     <!--widget04-->
-                    <div class="widget">
+                    <div class="widget order-w-fb">
                         <div class="widget-title">Pawaret</div>
                         <div class="FacebookLike">
                             กล่อง Facebook Like (ตัวอย่าง)
@@ -394,7 +397,7 @@
 
 
                     <!--widget05-->
-                    <div class="widget">
+                    <div class="widget order-w-spoonsor">
                         <div class="widget-title">Sponsor</div>
                         <div class="ad-box">พื้นที่โฆษณา / วิดีโอ</div>
 
@@ -462,9 +465,9 @@
                             <td>-</td>
 
                             <td>
-                                <span class="price-up">
+                                <span class="price-up down-text">
                                     <span class="icon dowm"></span>
-                                    +1,950
+                                    -1,950
                                 </span>
                             </td>
                             <td>49,100</td>
@@ -473,16 +476,16 @@
                         <tr>
                             <th>มี.ค.</th>
                             <td>
-                                <span class="price-up">
+                                <span class="price-up down-text">
                                     <span class="icon dowm"></span>
-                                    +1,700
+                                    -1,700
                                 </span>
                             </td>
                             <td>78,750</td>
                             <td>79,050</td>
 
                             <td>
-                                <span class="price-up">
+                                <span class="price-up up-text">
                                     <span class="icon up"></span>
                                     +3,750
                                 </span>
@@ -492,7 +495,7 @@
                         <tr>
                             <th>ก.พ.</th>
                             <td>
-                                <span class="price-up">
+                                <span class="price-up up-text">
                                     <span class="icon up"></span>
                                     +3,400
                                 </span>
@@ -500,9 +503,9 @@
                             <td>77,600</td>
 
                             <td>
-                                <span class="price-up">
+                                <span class="price-up down-text">
                                     <span class="icon dowm"></span>
-                                    <span class="">+1,850</span>
+                                    <span class="">-1,850</span>
                                 </span>
                             <td>44,600</td>
                             <td>47,450</td>
@@ -518,7 +521,7 @@
                             <td>81,950</td>
 
                             <td>
-                                <span class="price-up">
+                                <span class="price-up up-text">
                                     <span class="icon up"></span>
                                     +9,250
                                 </span>
@@ -529,22 +532,22 @@
                         <tr class="total">
                             <th>ทั้งปี</th>
                             <td>
-                                <span class="price-up">
+                                <span class="price-up up-text">
                                     <span class="icon up"></span>
-                                    <b>+1,4350</b>
+                                    +1,4350
                                 </span>
                             </td>
-                            <td><b>64,550</b></td>
-                            <td><b>81,950</b></td>
+                            <td>64,550</td>
+                            <td>81,950</td>
 
                             <td>
-                                <span class="price-up">
-                                    <span class="icon up"></span>
+                                <span class="price-up up-text">
+                                    <span class="icon up "></span>
                                     <b>+22,550</b>
                                 </span>
                             </td>
-                            <td><b>42,550</b></span></td>
-                            <td><b>67,400</b></td>
+                            <td>42,550</span></td>
+                            <td>67,400</td>
                         </tr>
                     </tbody>
                     </table>
@@ -571,6 +574,27 @@
             Designed for educational/demo purposes • <a href="">Contact</a></p>
     </footer>
 
+    <script>
+        var burgerMenu = document.getElementById('hamburger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
 
 </body>
 

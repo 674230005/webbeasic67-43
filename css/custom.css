@@ -679,11 +679,13 @@ margin-top: 8px;
 .gold-table th,
 .gold-table td  {
     border: 1px solid var(--line);
-    padding: 10px 2px;  
+    padding: 10px 2px; 
+    
 }
 .gold-table .total th,
 .gold-table .total td{
     background-color: var(--Bg03);
+    font-weight: bold; 
 }
 
 .icon {
@@ -719,9 +721,15 @@ margin-top: 8px;
     border-top: 10px solid rgb(255, 5, 5);
 }
 
-.dowmBG {
-    background-color:  rgb(213, 141, 141);
+.price-up.up-text{
+    color: green;
 }
+
+.price-up.down-text{
+    color: red;
+}
+
+
 
 .footer{
     background-color: #000000;
@@ -735,6 +743,122 @@ margin-top: 8px;
     align-items: center;
 }
 
+/*สำหลับหน้าจอ900px*/
+@media (max-width:922px) {
+    .site-header{background-color: yellow;}
+
+    .content-grid{grid-template-columns: 1fr;}    
+    
+}
+
+
+/*สำหลับหน้าจอ768px*/
+@media (max-width:768px) {
+    html {font-size: 14px;}
+    .site-header{background-color: #23c60a;}
+    
+    .hero-grid {grid-template-columns: 1fr}
+    
+    .form-row{grid-template-columns: 1fr;}
+
+    .form-checkbox-group{flex-direction: column;}
+
+    .nav-main{flex-direction: column;
+    padding-top: 20px;
+    }
+    
+}
+
+
+/*สำหลับหน้าจอ576px*/
+@media (max-width: 922px) {
+    .site-header{background-color: yellow;}
+    .content-grid{grid-template-columns: 1fr;}
+}
+
+/* สำหรับหน้าจอ 768px */
+@media (max-width: 768px) {
+    html{font-size: 14px;}
+    .nav-menu {flex-direction: column;}
+    .site-header{background-color: green;}
+    .hero-grid{grid-template-columns: 1fr;}
+    .form-row{flex-direction: column;}
+    .form-checkbox-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+}
+
+/* สำหรับหน้าจอ 576px */
+@media (max-width: 576px) {
+    .site-header{background-color: pink;}
+    
+    /*hamburger-menu*/
+    #hamburger-menu {
+        display: block;
+        height: 30px;
+        width: 30px;
+        position: relative;
+        z-index: 1000;
+        
+}
+
+/*วาดเส้นhamburger*/
+#hamburger-menu span,
+#hamburger-menu span:before,
+#hamburger-menu span:after {
+    background-color: #ffffff;
+    height: 3px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    content: "";
+
+
+    transition: all 0.3s ease;
+}
+
+#hamburger-menu span {top: 12px;}
+
+#hamburger-menu span:before{top: -8px;}
+
+#hamburger-menu span:after {top: 8px;}
+
+
+/*สร้างเส้น X */
+#hamburger-menu.close span:before 
+{transform: rotate(45deg);
+    top: 0;
+}
+#hamburger-menu.close span {background: transparent;}
+
+#hamburger-menu.close span:after{
+    transform: rotate(-45deg);
+    top: 0;
+}
+/*ปิดเมนู*/
+#menu{display: none;}
+/*แสดงเมนู*/
+#menu.overlay{ display: flex;}
+
+/*สลับตำแหน่งitem*/
+.order-box-image{ order: 3;}
+.order-box-table{ order: 2;}
+.order-box-form{ order: 1;}
+
+.order-w-intro{order: -5;}
+.order-w-f-green{order: -1;}
+.order-w-purple{order: -2;}
+.order-w-fb{order: -4;}
+.order-w-spoonsor{order: -3;}
+
+.sidehar-widget{
+    display: flex;
+    flex-direction: column;
+}
+
+}
 
 
 
