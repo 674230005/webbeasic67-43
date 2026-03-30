@@ -1,0 +1,369 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*===========================ปวเรศ=================================*/
+body {
+    font-family: "Kanit", sans-serif;
+    background-color: var(--Bg01);
+}
+
+
+/*ปรับสี*/
+:root {
+    --header: #518aca;
+    --Bg01: #026492d3;
+    --Bg02: #c6ba9cd3;
+    --Bg03: #a5cf9dd3;
+
+    /*สีปุ่ม*/
+    --btnLogin: rgb(25, 38, 116);
+    --btnSignUP: rgb(218, 148, 9);
+    --Read_more: rgb(25, 38, 116);
+    --btn_Map: rgb(186, 105, 87);
+
+    /*card*/
+    --card01: #dcfaff;
+    --card02: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+html {
+    font-size: 16px;
+}
+
+h3 {
+    color: #000000;
+}
+
+h4 {
+    color: #8d8d8d;
+}
+
+p {
+    color: #5e5c5c;
+}
+
+img {
+    border-radius: 8px;
+}
+
+footer{
+background-color: #1f3c88;
+                color: #ffffff;
+                text-align: center;
+                margin-top: 150px;
+                padding: 10px;
+                font-size: 16px;
+
+                display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+}
+
+/*หน้าล็อกอิน*/
+.container {
+    max-width: 700px;
+    margin: 180px auto 20px;
+
+}
+
+/*หน้าล็อกอิน*/
+.header1 {
+    text-align: center;
+    top: 0%;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    color: aliceblue;
+    background-color: var(--header);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/*พื้นหลังหน้าล็อกอิน*/
+.body {
+    background-image: url(../pojectimg/Bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*โลโก้*/
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/*ปุ่มล็อกอิน*/
+.buthome {
+    background-color: rgb(25, 38, 116);
+    color: #ffff;
+    padding: 8px 20px;
+    border-radius: 99px;
+
+    text-decoration: none;
+}
+
+/*ปุ่มล็อกอินเปรี่ยนสี*/
+.buthome:hover {
+    background-color: rgb(158, 162, 185);
+}
+
+.card {
+    background-color: var(--card01);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/*สีของขอบform Login*/
+.color-border {
+    border: 2px solid cornflowerblue;
+}
+
+
+/*ปรับLoginเข้ากลาง*/
+.form-Login {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+/*ระยะตรงกลางของช่องกลอกข้อมูล*/
+.form-group {
+    margin-bottom: 15px;
+}
+
+/*ช่องกลอกข้อมูล*/
+.form-Gmail,
+.form-password {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 0;
+
+}
+
+/*ทำให้ของข้างในเรียงแนวนอน*/
+.form-input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.Signup{
+    display: flex;
+    gap: 10px;
+}
+/*ทำให้แต่ละช่องกว้างเท่ากัน*/
+.Signup .form-group{
+    flex: 1;
+}
+
+/*ปุ่มล็อกอิน*/
+.Login {
+    background-color: var(--btnLogin);
+    color: #ffff;
+    padding: 8px 100px;
+    border-radius: 8px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+
+    display: block;
+    margin: 20px auto;
+}
+
+/*เปรี่ยนสี*/
+.Login:hover {
+    background-color: rgb(82, 82, 86);
+}
+
+/*ปุ่มสมัคร*/
+.SignUP {
+    background-color: var(--btnSignUP);
+    color: #ffff;
+    padding: 8px 100px;
+    border-radius: 8px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+
+    display: block;
+    margin: 20px auto;
+}
+
+/*เปรี่ยนสี*/
+.SignUP:hover {
+    background-color: rgb(82, 82, 86);
+}
+
+/*ปุ่มSignup*/
+.Signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/*=====================หน้าแนะนำสถานที่เที่ยว================================*/
+.card1 {
+    background-color: var(--card02);
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgb(105, 105, 105);
+    margin-top: 20px;
+}
+
+/*จัดหัวข้าเข้ากลาง*/
+.h2 {
+    text-align: center;
+    color: azure;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    background-color: coral;
+    border-radius: 20px;
+}
+
+/*ปุ่มเพิ่มเติม*/
+.btnRead_more {
+    background-color: var(--Read_more);
+    padding: 0 60px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+/*เปรี่ยนสี*/
+.btnRead_more:hover {
+    background-color: #518aca;
+}
+
+/*แบ่งฝั่ง*/
+.card-flex {
+    display: flex;
+    gap: 20px;
+}
+
+/*========================เนื่้อหา=============================*/
+.container1 {
+    max-width: 700px;
+    margin: 180px auto 20px;
+    margin-top: 0;
+}
+
+/*รูปหลัก*/
+.img_content {
+    width: 650px;
+    /*ปรับขนาด*/
+    height: auto;
+    border: 4px solid rgb(6, 95, 150);
+}
+
+/*รูปรอง2*/
+.img_N {
+    width: 300px;
+    /*ปรับขนาด*/
+    height: 250px;
+    border: 4px solid rgb(6, 95, 150);
+}
+
+/*แบ่งฝั่ง*/
+.container-grid {
+    display: grid;
+    grid-template-columns: 2fr 0.9fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.content-h3 {
+    /*เข้ากลาง*/
+    text-align: center;
+}
+
+/*ปุ่มเปิดmap*/
+.btn_Map {
+    background-color: var(--btn_Map);
+    color: #ffff;
+    padding: 5px 8px;
+    border-radius: 99px;
+    text-decoration: none;
+
+
+    margin-top: 8px;
+    display: inline-block;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn_Map:hover {
+    background-color: #c08f3a;
+}
+
+.img_map {
+    width: 200px;
+    /*ปรับขนาด*/
+    height: auto;
+    border: 4px solid rgb(6, 95, 150);
+
+    transition: 0.3s;
+}
+
+/*แบ่งtags*/
+.tags-flex {
+    display: flex;
+    gap: 20px;
+
+}
+
+.tags {
+    /*พวก#*/
+    text-decoration: none;
+    background-color: #518aca;
+    padding: 5px 8px;
+    border-radius: 8px;
+    color: #ffffff;
+
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.tags:hover {
+    background-color: #83b4ed;
+}
+
+.imge-link img {
+    /*รูปขยับ*/
+    width: 260;
+    transition: 0.3s;
+}
+
+.imge-link img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px #5082ff;
+}
+/*check*/
+.check{
+    text-align: center;
+    color: #00dd16;
+}
+/*========================ปวเรศeng=============================*/
+
+
+
+
+/*===================================================================*/
